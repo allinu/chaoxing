@@ -1,4 +1,7 @@
 # 🚀 超星学习通
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![sign](https://github.com/allinu/chaoxing/actions/workflows/sign-action.yml/badge.svg)](https://github.com/allinu/chaoxing/actions/workflows/sign-action.yml)
 
@@ -104,3 +107,23 @@
     **自己给自己点赞也可以触发执行**
     **自己更改代码上传也会触发执行**
     **自己手动触发执行也可以运行**
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://allinu.github.io/"><img src="https://avatars.githubusercontent.com/u/32992109?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Allinu</b></sub></a><br /><a href="#design-allinu" title="Design">🎨</a> <a href="https://github.com/allinu/chaoxing/commits?author=allinu" title="Tests">⚠️</a> <a href="https://github.com/allinu/chaoxing/commits?author=allinu" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
