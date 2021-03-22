@@ -22,6 +22,7 @@
     - [Cookies 获取](#cookies-获取)
     - [Class ID 和 Course ID](#class-id-和-course-id)
     - [💡 Github Action:自动运行](#github-action自动运行)
+  - [Contributors ✨](#contributors)
 
 <!-- /code_chunk_output -->
 
