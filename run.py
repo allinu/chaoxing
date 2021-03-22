@@ -1,7 +1,9 @@
 from Chaoxing import Chaoxing
+import os
 
-# 填写你的Cookie信息
-cookies = ""
+# 你的Cookie信息,环境变量自动获取! 请不要更改! 更改无效!
+# 具体说明看文档
+cookies = os.environ.get('COOKIE')
 # ClassID
 classid = '39007569'
 # CourseID
