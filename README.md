@@ -16,9 +16,17 @@
 
 1. Fork 本项目
 2. [Cookies获取](#Cookies获取)
-3. 将cookies添加到密钥COOKIE中(步骤在下面)
+3. 将`COOKIE`添加到密钥COOKIE中(步骤在下面),`CLASSId`,`COURSEId`,`PASS_TIME`,`SLEEP_TIME`获取也在下面,也添加到相同位置中
 4. 设置运行周期(给自己一个star也可以让程序运行),可以估计一下时间,然后点击开始运行,就可以应对更多情况
 5. 完成:tada:
+
+### (推荐 :tada:) Docker运行
+
+```shell
+docker run -d -e COOKIE="你的COOKIE" -e CLASSID="你的ClassID" -e COURSEID="你的CourseID" -e SLEEP_TIME="每次请求间隔" -e PASS_TIME="请求时长" --name cx liona/chaoxing
+```
+
+
 ### 本地运行
 
 1. Clone本仓库代码到本地
@@ -44,8 +52,9 @@
 
 4. 修改配置,请看 - [⚠️注意事项](#注意事项)
 
-    - 添加cookie
-    - 添加`classid`,`courseid`
+    - 修改`cookie`
+    - 修改`classid`,`courseid`
+    - 修改`pass_time`,`sleep_time`
 
 5. 运行脚本
 
@@ -63,10 +72,9 @@
 - 打开[这个链接](http://mooc1-1.chaoxing.com/visit/interaction): 如果需要登录的话请登录后重试
 - 在页面右键 -> 审查元素, 或者摁下<kbd>F12</kbd>,打开`开发者窗口`
 - 在打开`开发者窗口`的状态下,刷新页面<kbd>F5</kbd>
-- ![](https://i0.hdslb.com/bfs/album/55c3551bffe943703b814b33c96c540f0abd2591.png)
+![](https://i0.hdslb.com/bfs/album/55c3551bffe943703b814b33c96c540f0abd2591.png)
 
-![](https://i0.hdslb.com/bfs/album/9be5d383df77519f218b4678b5c045c7d0ad363d.png)
-
+![](https://i0.hdslb.com/bfs/album/0ac250d73686cad7b26276c699200370ffd92154.png)
 ### Class ID 和 Course ID
 
 - 关闭`开发者窗口`
