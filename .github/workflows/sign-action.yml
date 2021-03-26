@@ -51,5 +51,9 @@ jobs:
       - name: Run with schedule.
         env:
           COOKIE: ${{secrets.COOKIE}}
+          CLASSID: ${{secrets.CLASSID}}
+          COURSEID: ${{secrets.COURSEID}}
+          PASS_TIME: ${{secrets.PASS_TIME}}
+          SLEEP_TIME: ${{secrets.SLEEP_TIME}}
         run: |
           python3 run.py
