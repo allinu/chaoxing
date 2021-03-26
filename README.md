@@ -10,24 +10,6 @@
 > 有些学校上课使用学习通抢答问题,进行加分, 故产生了本脚本
 
 
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
-
-- [🚀 超星学习通](#超星学习通)
-  - [🥢使用方法](#使用方法)
-    - [(推荐 :tada:) 自动运行](#推荐-tada-自动运行)
-    - [本地运行](#本地运行)
-  - [⚠️注意事项](#️注意事项)
-    - [Cookies 获取](#cookies-获取)
-    - [Class ID 和 Course ID](#class-id-和-course-id)
-    - [💡 Github Action:自动运行](#github-action自动运行)
-  - [Contributors ✨](#contributors)
-
-<!-- /code_chunk_output -->
-
-
-
 ## 🥢使用方法
 
 ### (推荐 :tada:) 自动运行
@@ -35,7 +17,7 @@
 1. Fork 本项目
 2. [Cookies获取](#Cookies获取)
 3. 将cookies添加到密钥COOKIE中(步骤在下面)
-4. 设置运行周期
+4. 设置运行周期(给自己一个star也可以让程序运行),可以估计一下时间,然后点击开始运行,就可以应对更多情况
 5. 完成:tada:
 ### 本地运行
 

@@ -70,6 +70,12 @@ class Chaoxing:
                         self.log.info('抢答成功')
                     else:
                         self.log.info("暂无抢答\n")
+                    # activeType = 2 为签到, 支持二维码签到
+                    if (int(active[1]) == 2):
+                        self.fangwen(str(active[0]))
+                        self.log.info('签到成功')
+                    else:
+                        self.log.info("暂无签到\n")
 
                 self.log.info(active[1])
             else:
