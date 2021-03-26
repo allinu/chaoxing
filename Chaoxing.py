@@ -53,30 +53,33 @@ class Chaoxing:
             self.courseid, self.classid)
         while datetime.datetime.now() <= self.run_end_time:
             time.sleep(self.sleep_time)
-            resoponse = requests.get(url, headers=self.headers, timeout=5)
-            # xpath解析文本
-            html = etree.HTML(resoponse.content)
-            divs = html.xpath('//*[@id="startList"]/div')
+            try:
+                resoponse = requests.get(url, headers=self.headers, timeout=5)
+                # xpath解析文本
+                html = etree.HTML(resoponse.content)
+                divs = html.xpath('//*[@id="startList"]/div')
 
-            if (divs):
-                for div in divs:
-                    activeid = div.xpath('./div[1]/@onclick')[0]
-                    active = re.findall('activeDetail\((\d+),(\d+),.*?\)',
-                                        activeid)[0]
+                if (divs):
+                    for div in divs:
+                        activeid = div.xpath('./div[1]/@onclick')[0]
+                        active = re.findall('activeDetail\((\d+),(\d+),.*?\)',
+                                            activeid)[0]
 
-                    # activeType = 4 为抢答
-                    if (int(active[1]) == 4):
-                        self.fangwen(str(active[0]))
-                        self.log.info('抢答成功')
-                    else:
-                        self.log.info("暂无抢答\n")
-                    # activeType = 2 为签到, 支持二维码签到
-                    if (int(active[1]) == 2):
-                        self.fangwen(str(active[0]))
-                        self.log.info('签到成功')
-                    else:
-                        self.log.info("暂无签到\n")
+                        # activeType = 4 为抢答
+                        if (int(active[1]) == 4):
+                            self.fangwen(str(active[0]))
+                            self.log.info('抢答成功')
+                        else:
+                            self.log.info("暂无抢答\n")
+                        # activeType = 2 为签到, 支持二维码签到
+                        if (int(active[1]) == 2):
+                            self.fangwen(str(active[0]))
+                            self.log.info('签到成功')
+                        else:
+                            self.log.info("暂无签到\n")
 
-                self.log.info(active[1])
-            else:
-                self.log.info("暂无活动\n")
+                    self.log.info(active[1])
+                else:
+                    self.log.info("暂无活动\n")
+            except requests.exceptions.ReadTimeout as e:
+                time.sleep(1)
